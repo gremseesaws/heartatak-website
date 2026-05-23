@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Components */
+@layer components {
+  .btn {
+    @apply bg-red-600 hover:bg-red-700 px-6 py-3 rounded font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-red-600/50;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white hover:bg-white hover:text-black px-6 py-3 rounded font-bold uppercase tracking-wider transition-all duration-300;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 py-20;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-black uppercase tracking-tight mb-12;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef4444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* Image Optimization */
+img {
+  @apply will-change-transform;
+}
