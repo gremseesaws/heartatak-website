@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Navigation from '@/components/Navigation';
 import HeroSlider from '@/components/HeroSlider';
 import ArticleCard from '@/components/ArticleCard';
 import IssueCard from '@/components/IssueCard';
